@@ -3,7 +3,6 @@
   "title": "Circadian rythm deprivation scenario",
   "story": "TODO",
   "days": [
-    [
   {
     "day": 185,
     "values": {
@@ -364,6 +363,5 @@
       "mood_score": 5
     }
   }
-]
-  ]
+ ]
 }
