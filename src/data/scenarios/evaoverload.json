@@ -1,7 +1,7 @@
 {
   "id": "evaoverload",
   "title": "EVA Overload scenario",
-  "story": "TODO",
+  "story": "A 30-day orbital extravehicular activity (EVA) overload scenario (Mission Days 185–214) demonstrating cumulative physical strain without infection: body temperature remains afebrile (36.6–37.1 °C), confirming mechanical/cardiovascular overexertion rather than illness. Days 185–187 establish a healthy nominal baseline (HR 72–74 bpm, BP 118/75–120/76 mmHg, mood 5/5). Days 188–190 mark the start of heavy external station work, pushing HR to 85 bpm and BP to 127/80 mmHg with mood dipping to 4/5, followed by a brief positive recovery on Day 191 (HR 76 bpm, mood 5/5). Workload escalates again on Days 192–194 (HR 95 bpm, BP 136/86 mmHg, mood 3/5), briefly relieved by the mission's strongest mid-cycle recovery on Day 195 (HR 79 bpm, mood 5/5). A sharper surge on Days 196–198 drives HR to 104 bpm and BP to 142/91 mmHg, and the short rest on Day 199 proves insufficient. During Days 200–204, sustained heavy EVA triggers multi-system alerts (HR up to 112 bpm, BP 148/95 mmHg, sleep ~4.7 hrs, mood 2/5), with only minimal relief on Day 202. By Days 205–209, chronic fatigue sets in so reduced-load days barely help, culminating in the worst physical and mental state on Day 209 (HR 114 bpm, BP 150/96 mmHg, glucose 111 mg/dL, sleep ~4.6 hrs, mood 2/5). Finally, extended and effective rest across Days 210–214 steadily restores crew condition, bringing HR down to 90 bpm, BP to 130/83 mmHg, sleep to ~6.8 hrs, and mood back to 4/5.",
   "days": [
   {
     "day": 185,
