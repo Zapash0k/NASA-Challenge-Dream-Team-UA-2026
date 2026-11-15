@@ -1,0 +1,62 @@
+{
+  "bpm": {
+    "term": "bpm (Beats Per Minute)",
+    "short": "The number of heartbeats in one minute. A normal resting heart rate for adults is 60–100 bpm."
+  },
+  "mmHg": {
+    "term": "mmHg (Millimeters of Mercury)",
+    "short": "The standard unit for measuring blood pressure. A healthy baseline is around 120/80 mmHg."
+  },
+  "mg/dL": {
+    "term": "mg/dL (Milligrams per Deciliter)",
+    "short": "A unit measuring blood sugar (glucose) concentration. Normal fasting levels are typically 70–99 mg/dL."
+  },
+  "ECG": {
+    "term": "ECG (Electrocardiogram)",
+    "short": "A recording of the heart's electrical activity used to check heart rate and rhythm."
+  },
+  "cardiovascular": {
+    "term": "Cardiovascular System",
+    "short": "The heart and blood vessels working together to deliver oxygen and nutrients throughout the body."
+  },
+  "sphygmomanometer": {
+    "term": "Sphygmomanometer",
+    "short": "A medical blood pressure cuff and gauge used to measure arterial blood pressure."
+  },
+  "systolic": {
+    "term": "Systolic Pressure (Top Number)",
+    "short": "The pressure in your arteries when the heart contracts and pumps blood out."
+  },
+  "diastolic": {
+    "term": "Diastolic Pressure (Bottom Number)",
+    "short": "The pressure in your arteries when the heart rests between beats."
+  },
+  "thermoregulation": {
+    "term": "Thermoregulation",
+    "short": "The body's ability to keep its core temperature stable (~36.6 °C) despite external temperature changes."
+  },
+  "hypothermia": {
+    "term": "Hypothermia",
+    "short": "A dangerous drop in core body temperature below 35.0 °C when the body loses heat faster than it produces it."
+  },
+  "glucose": {
+    "term": "Blood Glucose",
+    "short": "The main sugar in your blood and primary energy source for your brain and muscles."
+  },
+  "insulin": {
+    "term": "Insulin",
+    "short": "A hormone that helps glucose move from the bloodstream into cells to be used for energy."
+  },
+  "hypoglycemia": {
+    "term": "Hypoglycemia (Low Blood Sugar)",
+    "short": "A condition where blood glucose falls below 70 mg/dL, which can cause dizziness, weakness, or confusion."
+  },
+  "circadian": {
+    "term": "Circadian Rhythm",
+    "short": "The body's internal ~24-hour biological clock that regulates sleep, alertness, and hormone cycles."
+  },
+  "microgravity": {
+    "term": "Microgravity",
+    "short": "Near-weightlessness in orbit, causing body fluids to shift upward toward the head and chest."
+  }
+}

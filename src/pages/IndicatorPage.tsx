@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import contentData from '../content/content.json';
 import thresholdsData from '../content/thresholds.json';
 import TrendChart from '../components/TrendChart';
+import GlossaryText, { TermTooltip } from '../components/GlossaryText';
 
 type SourceItem = {
   title: string;
@@ -76,7 +77,7 @@ export default function IndicatorPage() {
           <Link to="/" className="nasa-tag">← Back to Console</Link>
           {threshold && (
             <span className="unit-label">
-              Unit: <strong>{threshold.unit}</strong> | Normal: {normalZone?.min ?? '—'}–{normalZone?.max ?? '—'} {threshold.unit}
+              Unit: <strong><TermTooltip termKey={threshold.unit}>{threshold.unit}</TermTooltip></strong> | Normal: {normalZone?.min ?? '-'}-{normalZone?.max ?? '-'} {threshold.unit}
             </span>
           )}
         </div>
@@ -120,25 +121,25 @@ export default function IndicatorPage() {
           <div className="nasa-white-card">
             <span className="nasa-tag">PROTOCOL</span>
             <h3>How to Measure</h3>
-            <p>{content.howToMeasure}</p>
+            <p><GlossaryText text={content.howToMeasure}/></p>
           </div>
 
           <div className="nasa-white-card">
             <span className="nasa-tag">PHYSIOLOGY</span>
             <h3>Why It Matters</h3>
-            <p>{content.whyItMatters}</p>
+            <p><GlossaryText text={content.whyItMatters} /></p>
           </div>
 
           <div className="nasa-white-card">
             <span className="nasa-tag">MICROGRAVITY FACTOR</span>
             <h3>Space Risk</h3>
-            <p>{content.spaceRisk}</p>
+            <p><GlossaryText text={content.spaceRisk} /></p>
           </div>
 
           <div className="nasa-white-card">
             <span className="nasa-tag">THRESHOLDS</span>
             <h3>When to Worry</h3>
-            <p>{content.whenToWorry}</p>
+            <p><GlossaryText text={content.whenToWorry} /></p>
           </div>
 
           <div className="nasa-white-card">
@@ -147,11 +148,11 @@ export default function IndicatorPage() {
             {Array.isArray(content.actions) ? (
               <ul>
                 {content.actions.map((action, idx) => (
-                  <li key={idx}>{action}</li>
+                  <li key={idx}><GlossaryText text={action} /></li>
                 ))}
               </ul>
             ) : (
-              <p>{content.actions}</p>
+              <p><GlossaryText text={content.actions} /></p>
             )}
           </div>
 
@@ -160,7 +161,7 @@ export default function IndicatorPage() {
               FLIGHT SURGEON ALERT
             </span>
             <h3>When to Contact Flight Surgeon</h3>
-            <p>{content.callFlightSurgeon}</p>
+            <p><GlossaryText text={content.callFlightSurgeon} /></p>
           </div>
         </div>
       )}
