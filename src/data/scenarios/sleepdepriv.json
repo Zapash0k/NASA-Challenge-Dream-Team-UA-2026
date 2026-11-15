@@ -3,365 +3,365 @@
   "title": "Sleep deprivation scenario",
   "story": "TODO",
   "days": [
-  {
-    "day": 185,
-    "values": {
-      "heart_rate": 72,
-      "bp_systolic": 118,
-      "bp_diastolic": 75,
-      "body_temperature": 36.6,
-      "blood_glucose": 92,
-      "sleep_hours": 7.2,
-      "mood_score": 5
+    {
+      "day": 185,
+      "values": {
+        "heart_rate": 72,
+        "bp_systolic": 118,
+        "bp_diastolic": 75,
+        "body_temperature": 36.6,
+        "blood_glucose": 92,
+        "sleep_hours": 7.2,
+        "mood_score": 5
+      }
+    },
+    {
+      "day": 186,
+      "values": {
+        "heart_rate": 73,
+        "bp_systolic": 118,
+        "bp_diastolic": 75,
+        "body_temperature": 36.6,
+        "blood_glucose": 94,
+        "sleep_hours": 7.1,
+        "mood_score": 5
+      }
+    },
+    {
+      "day": 187,
+      "values": {
+        "heart_rate": 72,
+        "bp_systolic": 117,
+        "bp_diastolic": 74,
+        "body_temperature": 36.7,
+        "blood_glucose": 93,
+        "sleep_hours": 7.5,
+        "mood_score": 5
+      }
+    },
+    {
+      "day": 188,
+      "values": {
+        "heart_rate": 73,
+        "bp_systolic": 118,
+        "bp_diastolic": 75,
+        "body_temperature": 36.6,
+        "blood_glucose": 92,
+        "sleep_hours": 6.9,
+        "mood_score": 5
+      }
+    },
+    {
+      "day": 189,
+      "values": {
+        "heart_rate": 74,
+        "bp_systolic": 118,
+        "bp_diastolic": 75,
+        "body_temperature": 36.7,
+        "blood_glucose": 94,
+        "sleep_hours": 6.8,
+        "mood_score": 5
+      }
+    },
+    {
+      "day": 190,
+      "values": {
+        "heart_rate": 77,
+        "bp_systolic": 121,
+        "bp_diastolic": 77,
+        "body_temperature": 36.7,
+        "blood_glucose": 94,
+        "sleep_hours": 5.9,
+        "mood_score": 4
+      }
+    },
+    {
+      "day": 191,
+      "values": {
+        "heart_rate": 74,
+        "bp_systolic": 118,
+        "bp_diastolic": 75,
+        "body_temperature": 36.6,
+        "blood_glucose": 93,
+        "sleep_hours": 6.7,
+        "mood_score": 4
+      }
+    },
+    {
+      "day": 192,
+      "values": {
+        "heart_rate": 76,
+        "bp_systolic": 120,
+        "bp_diastolic": 76,
+        "body_temperature": 36.7,
+        "blood_glucose": 95,
+        "sleep_hours": 6.2,
+        "mood_score": 4
+      }
+    },
+    {
+      "day": 193,
+      "values": {
+        "heart_rate": 77,
+        "bp_systolic": 121,
+        "bp_diastolic": 77,
+        "body_temperature": 36.7,
+        "blood_glucose": 95,
+        "sleep_hours": 6.1,
+        "mood_score": 4
+      }
+    },
+    {
+      "day": 194,
+      "values": {
+        "heart_rate": 80,
+        "bp_systolic": 123,
+        "bp_diastolic": 78,
+        "body_temperature": 36.8,
+        "blood_glucose": 96,
+        "sleep_hours": 5.6,
+        "mood_score": 4
+      }
+    },
+    {
+      "day": 195,
+      "values": {
+        "heart_rate": 76,
+        "bp_systolic": 119,
+        "bp_diastolic": 76,
+        "body_temperature": 36.7,
+        "blood_glucose": 94,
+        "sleep_hours": 6.5,
+        "mood_score": 4
+      }
+    },
+    {
+      "day": 196,
+      "values": {
+        "heart_rate": 78,
+        "bp_systolic": 122,
+        "bp_diastolic": 77,
+        "body_temperature": 36.8,
+        "blood_glucose": 95,
+        "sleep_hours": 5.8,
+        "mood_score": 4
+      }
+    },
+    {
+      "day": 197,
+      "values": {
+        "heart_rate": 79,
+        "bp_systolic": 123,
+        "bp_diastolic": 78,
+        "body_temperature": 36.8,
+        "blood_glucose": 95,
+        "sleep_hours": 5.7,
+        "mood_score": 4
+      }
+    },
+    {
+      "day": 198,
+      "values": {
+        "heart_rate": 81,
+        "bp_systolic": 124,
+        "bp_diastolic": 79,
+        "body_temperature": 36.8,
+        "blood_glucose": 96,
+        "sleep_hours": 5.4,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 199,
+      "values": {
+        "heart_rate": 77,
+        "bp_systolic": 120,
+        "bp_diastolic": 77,
+        "body_temperature": 36.7,
+        "blood_glucose": 95,
+        "sleep_hours": 6.2,
+        "mood_score": 4
+      }
+    },
+    {
+      "day": 200,
+      "values": {
+        "heart_rate": 80,
+        "bp_systolic": 124,
+        "bp_diastolic": 79,
+        "body_temperature": 36.8,
+        "blood_glucose": 96,
+        "sleep_hours": 5.5,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 201,
+      "values": {
+        "heart_rate": 81,
+        "bp_systolic": 125,
+        "bp_diastolic": 80,
+        "body_temperature": 36.8,
+        "blood_glucose": 96,
+        "sleep_hours": 5.6,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 202,
+      "values": {
+        "heart_rate": 79,
+        "bp_systolic": 121,
+        "bp_diastolic": 78,
+        "body_temperature": 36.7,
+        "blood_glucose": 95,
+        "sleep_hours": 6.0,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 203,
+      "values": {
+        "heart_rate": 82,
+        "bp_systolic": 126,
+        "bp_diastolic": 80,
+        "body_temperature": 36.8,
+        "blood_glucose": 97,
+        "sleep_hours": 5.4,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 204,
+      "values": {
+        "heart_rate": 83,
+        "bp_systolic": 127,
+        "bp_diastolic": 81,
+        "body_temperature": 36.8,
+        "blood_glucose": 96,
+        "sleep_hours": 5.3,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 205,
+      "values": {
+        "heart_rate": 80,
+        "bp_systolic": 123,
+        "bp_diastolic": 79,
+        "body_temperature": 36.8,
+        "blood_glucose": 96,
+        "sleep_hours": 6.1,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 206,
+      "values": {
+        "heart_rate": 84,
+        "bp_systolic": 128,
+        "bp_diastolic": 81,
+        "body_temperature": 36.9,
+        "blood_glucose": 97,
+        "sleep_hours": 5.2,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 207,
+      "values": {
+        "heart_rate": 83,
+        "bp_systolic": 127,
+        "bp_diastolic": 81,
+        "body_temperature": 36.8,
+        "blood_glucose": 97,
+        "sleep_hours": 5.4,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 208,
+      "values": {
+        "heart_rate": 85,
+        "bp_systolic": 129,
+        "bp_diastolic": 82,
+        "body_temperature": 36.9,
+        "blood_glucose": 98,
+        "sleep_hours": 5.1,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 209,
+      "values": {
+        "heart_rate": 82,
+        "bp_systolic": 124,
+        "bp_diastolic": 80,
+        "body_temperature": 36.8,
+        "blood_glucose": 97,
+        "sleep_hours": 5.8,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 210,
+      "values": {
+        "heart_rate": 88,
+        "bp_systolic": 131,
+        "bp_diastolic": 85,
+        "body_temperature": 36.9,
+        "blood_glucose": 99,
+        "sleep_hours": 4.7,
+        "mood_score": 2
+      }
+    },
+    {
+      "day": 211,
+      "values": {
+        "heart_rate": 83,
+        "bp_systolic": 126,
+        "bp_diastolic": 81,
+        "body_temperature": 36.8,
+        "blood_glucose": 97,
+        "sleep_hours": 5.6,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 212,
+      "values": {
+        "heart_rate": 85,
+        "bp_systolic": 130,
+        "bp_diastolic": 83,
+        "body_temperature": 36.9,
+        "blood_glucose": 98,
+        "sleep_hours": 5.2,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 213,
+      "values": {
+        "heart_rate": 86,
+        "bp_systolic": 131,
+        "bp_diastolic": 84,
+        "body_temperature": 36.9,
+        "blood_glucose": 99,
+        "sleep_hours": 5.1,
+        "mood_score": 3
+      }
+    },
+    {
+      "day": 214,
+      "values": {
+        "heart_rate": 87,
+        "bp_systolic": 132,
+        "bp_diastolic": 85,
+        "body_temperature": 36.9,
+        "blood_glucose": 99,
+        "sleep_hours": 5.0,
+        "mood_score": 3
+      }
     }
-  },
-  {
-    "day": 186,
-    "values": {
-      "heart_rate": 73,
-      "bp_systolic": 118,
-      "bp_diastolic": 75,
-      "body_temperature": 36.6,
-      "blood_glucose": 94,
-      "sleep_hours": 7.1,
-      "mood_score": 5
-    }
-  },
-  {
-    "day": 187,
-    "values": {
-      "heart_rate": 72,
-      "bp_systolic": 117,
-      "bp_diastolic": 74,
-      "body_temperature": 36.7,
-      "blood_glucose": 93,
-      "sleep_hours": 7.5,
-      "mood_score": 5
-    }
-  },
-  {
-    "day": 188,
-    "values": {
-      "heart_rate": 73,
-      "bp_systolic": 118,
-      "bp_diastolic": 75,
-      "body_temperature": 36.6,
-      "blood_glucose": 92,
-      "sleep_hours": 6.9,
-      "mood_score": 5
-    }
-  },
-  {
-    "day": 189,
-    "values": {
-      "heart_rate": 74,
-      "bp_systolic": 118,
-      "bp_diastolic": 75,
-      "body_temperature": 36.7,
-      "blood_glucose": 94,
-      "sleep_hours": 6.8,
-      "mood_score": 5
-    }
-  },
-  {
-    "day": 190,
-    "values": {
-      "heart_rate": 77,
-      "bp_systolic": 121,
-      "bp_diastolic": 77,
-      "body_temperature": 36.7,
-      "blood_glucose": 94,
-      "sleep_hours": 5.9,
-      "mood_score": 4
-    }
-  },
-  {
-    "day": 191,
-    "values": {
-      "heart_rate": 74,
-      "bp_systolic": 118,
-      "bp_diastolic": 75,
-      "body_temperature": 36.6,
-      "blood_glucose": 93,
-      "sleep_hours": 6.7,
-      "mood_score": 4
-    }
-  },
-  {
-    "day": 192,
-    "values": {
-      "heart_rate": 76,
-      "bp_systolic": 120,
-      "bp_diastolic": 76,
-      "body_temperature": 36.7,
-      "blood_glucose": 95,
-      "sleep_hours": 6.2,
-      "mood_score": 4
-    }
-  },
-  {
-    "day": 193,
-    "values": {
-      "heart_rate": 77,
-      "bp_systolic": 121,
-      "bp_diastolic": 77,
-      "body_temperature": 36.7,
-      "blood_glucose": 95,
-      "sleep_hours": 6.1,
-      "mood_score": 4
-    }
-  },
-  {
-    "day": 194,
-    "values": {
-      "heart_rate": 80,
-      "bp_systolic": 123,
-      "bp_diastolic": 78,
-      "body_temperature": 36.8,
-      "blood_glucose": 96,
-      "sleep_hours": 5.6,
-      "mood_score": 4
-    }
-  },
-  {
-    "day": 195,
-    "values": {
-      "heart_rate": 76,
-      "bp_systolic": 119,
-      "bp_diastolic": 76,
-      "body_temperature": 36.7,
-      "blood_glucose": 94,
-      "sleep_hours": 6.5,
-      "mood_score": 4
-    }
-  },
-  {
-    "day": 196,
-    "values": {
-      "heart_rate": 78,
-      "bp_systolic": 122,
-      "bp_diastolic": 77,
-      "body_temperature": 36.8,
-      "blood_glucose": 95,
-      "sleep_hours": 5.8,
-      "mood_score": 4
-    }
-  },
-  {
-    "day": 197,
-    "values": {
-      "heart_rate": 79,
-      "bp_systolic": 123,
-      "bp_diastolic": 78,
-      "body_temperature": 36.8,
-      "blood_glucose": 95,
-      "sleep_hours": 5.7,
-      "mood_score": 4
-    }
-  },
-  {
-    "day": 198,
-    "values": {
-      "heart_rate": 81,
-      "bp_systolic": 124,
-      "bp_diastolic": 79,
-      "body_temperature": 36.8,
-      "blood_glucose": 96,
-      "sleep_hours": 5.4,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 199,
-    "values": {
-      "heart_rate": 77,
-      "bp_systolic": 120,
-      "bp_diastolic": 77,
-      "body_temperature": 36.7,
-      "blood_glucose": 95,
-      "sleep_hours": 6.2,
-      "mood_score": 4
-    }
-  },
-  {
-    "day": 200,
-    "values": {
-      "heart_rate": 80,
-      "bp_systolic": 124,
-      "bp_diastolic": 79,
-      "body_temperature": 36.8,
-      "blood_glucose": 96,
-      "sleep_hours": 5.5,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 201,
-    "values": {
-      "heart_rate": 81,
-      "bp_systolic": 125,
-      "bp_diastolic": 80,
-      "body_temperature": 36.8,
-      "blood_glucose": 96,
-      "sleep_hours": 5.6,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 202,
-    "values": {
-      "heart_rate": 79,
-      "bp_systolic": 121,
-      "bp_diastolic": 78,
-      "body_temperature": 36.7,
-      "blood_glucose": 95,
-      "sleep_hours": 6.0,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 203,
-    "values": {
-      "heart_rate": 82,
-      "bp_systolic": 126,
-      "bp_diastolic": 80,
-      "body_temperature": 36.8,
-      "blood_glucose": 97,
-      "sleep_hours": 5.4,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 204,
-    "values": {
-      "heart_rate": 83,
-      "bp_systolic": 127,
-      "bp_diastolic": 81,
-      "body_temperature": 36.8,
-      "blood_glucose": 96,
-      "sleep_hours": 5.3,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 205,
-    "values": {
-      "heart_rate": 80,
-      "bp_systolic": 123,
-      "bp_diastolic": 79,
-      "body_temperature": 36.8,
-      "blood_glucose": 96,
-      "sleep_hours": 6.1,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 206,
-    "values": {
-      "heart_rate": 84,
-      "bp_systolic": 128,
-      "bp_diastolic": 81,
-      "body_temperature": 36.9,
-      "blood_glucose": 97,
-      "sleep_hours": 5.2,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 207,
-    "values": {
-      "heart_rate": 83,
-      "bp_systolic": 127,
-      "bp_diastolic": 81,
-      "body_temperature": 36.8,
-      "blood_glucose": 97,
-      "sleep_hours": 5.4,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 208,
-    "values": {
-      "heart_rate": 85,
-      "bp_systolic": 129,
-      "bp_diastolic": 82,
-      "body_temperature": 36.9,
-      "blood_glucose": 98,
-      "sleep_hours": 5.1,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 209,
-    "values": {
-      "heart_rate": 82,
-      "bp_systolic": 124,
-      "bp_diastolic": 80,
-      "body_temperature": 36.8,
-      "blood_glucose": 97,
-      "sleep_hours": 5.8,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 210,
-    "values": {
-      "heart_rate": 88,
-      "bp_systolic": 131,
-      "bp_diastolic": 85,
-      "body_temperature": 36.9,
-      "blood_glucose": 99,
-      "sleep_hours": 4.7,
-      "mood_score": 2
-    }
-  },
-  {
-    "day": 211,
-    "values": {
-      "heart_rate": 83,
-      "bp_systolic": 126,
-      "bp_diastolic": 81,
-      "body_temperature": 36.8,
-      "blood_glucose": 97,
-      "sleep_hours": 5.6,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 212,
-    "values": {
-      "heart_rate": 85,
-      "bp_systolic": 130,
-      "bp_diastolic": 83,
-      "body_temperature": 36.9,
-      "blood_glucose": 98,
-      "sleep_hours": 5.2,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 213,
-    "values": {
-      "heart_rate": 86,
-      "bp_systolic": 131,
-      "bp_diastolic": 84,
-      "body_temperature": 36.9,
-      "blood_glucose": 99,
-      "sleep_hours": 5.1,
-      "mood_score": 3
-    }
-  },
-  {
-    "day": 214,
-    "values": {
-      "heart_rate": 87,
-      "bp_systolic": 132,
-      "bp_diastolic": 85,
-      "body_temperature": 36.9,
-      "blood_glucose": 99,
-      "sleep_hours": 5.0,
-      "mood_score": 3
-    }
-  }
-]
+  ]
 }

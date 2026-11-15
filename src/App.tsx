@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import BodyMapPage from './pages/BodyMapPage';
-import MeasurePage, { VITALS_STORAGE_KEY, type StoredVitals } from './pages/MeasurePage';
+import MeasurePage from './pages/MeasurePage';
 import IndicatorPage from './pages/IndicatorPage';
 import thresholdsData from './content/thresholds.json';
 import MissionPage from './pages/MissionPage';
-import { useState } from 'react';
+import { useMission } from './core/missionControler';
 
 type ZoneStatus = 'normal' | 'attention' | 'critical';
 
@@ -22,28 +22,7 @@ const STATUS_LABELS: Record<ZoneStatus, string> = {
 };
 
 function Dashboard() {
-  const [vitals] = useState<StoredVitals>(() => {
-    const saved = localStorage.getItem(VITALS_STORAGE_KEY);
-    if (saved) {
-      try {
-        return JSON.parse(saved);
-      } catch {
-        // fallback below
-      }
-    }
-    return {
-      heart_rate: 72,
-      bp_systolic: 118,
-      bp_diastolic: 76,
-      body_temperature: 36.6,
-      blood_glucose: 92,
-      sleep_hours: 7.5,
-      sleep_quality: 4,
-      mood_score: 4,
-      notes: '',
-      updatedAt: 'Nominal',
-    };
-  });
+    const { vitals } = useMission();
 
   const getThresholdStatus = (key: keyof typeof thresholdsData, value: number): ZoneStatus => {
     const zones = thresholdsData[key]?.zones ?? [];
@@ -256,7 +235,7 @@ export default function App() {
             <Route path="/mission" element={<MissionPage />} />
           </Routes>
           <footer>
-            Dream Team UA // HealthySpace Orbital Telemetry Monitoring Interface
+            Dream Team UA // OrbitWell Orbital Telemetry Monitoring Interface
           </footer>
         </div>
       </div>

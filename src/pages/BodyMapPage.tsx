@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import thresholdsData from '../content/thresholds.json';
-import { VITALS_STORAGE_KEY, type StoredVitals } from './MeasurePage';
+import { useMission } from '../core/missionControler';
 
 type ZoneStatus = 'normal' | 'attention' | 'critical';
 
@@ -139,34 +139,12 @@ function getThresholdStatus(key: keyof typeof thresholdsData, value: number): Zo
   return matched;
 }
 
-function loadCurrentVitals(): StoredVitals {
-  const saved = localStorage.getItem(VITALS_STORAGE_KEY);
-  if (saved) {
-    try {
-      return JSON.parse(saved) as StoredVitals;
-    } catch {
-      // fallback
-    }
-  }
-  return {
-    heart_rate: 72,
-    bp_systolic: 118,
-    bp_diastolic: 76,
-    body_temperature: 36.6,
-    blood_glucose: 92,
-    sleep_hours: 7.5,
-    sleep_quality: 4,
-    mood_score: 4,
-    notes: '',
-    updatedAt: 'Nominal',
-  };
-}
 
 export default function BodyMapPage() {
   const [gender, setGender] = useState<'male' | 'female'>('male');
   const [zone, setZone] = useState<string | null>('torso');
   const [selectedOrgan, setSelectedOrgan] = useState<string | null>(null);
-  const [vitals] = useState<StoredVitals>(loadCurrentVitals);
+  const { vitals } = useMission();
 
   const model = BODY_MODELS[gender];
 

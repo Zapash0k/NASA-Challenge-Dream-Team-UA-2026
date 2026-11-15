@@ -47,9 +47,9 @@ export function saveDay(values: DayValues): number {
 }
 
 /** Історія однієї величини: одна точка на день місії, за зростанням дня. */
-export function getSeries(metric: MetricId): SeriesPoint[] {
+export function getSeries(metric: MetricId, list: Measurement[] = loadMeasurements()): SeriesPoint[] {
   const byDay = new Map<number, SeriesPoint>();
-  loadMeasurements().forEach((m, i) => {
+  list.forEach((m, i) => {
     if (m.type !== metric) return;
     const day = m.missionDay ?? i + 1;
     byDay.set(day, { day, label: `Day ${day}`, timestamp: m.timestamp, value: m.value });
