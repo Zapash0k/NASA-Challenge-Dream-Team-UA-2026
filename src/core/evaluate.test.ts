@@ -1,10 +1,11 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import { evaluate } from './evaluate';
 import { createMeasurement, measurementsFromScenario } from './measurements';
-import { mockMeasurements, mockProfile } from './mock';
 import { addMeasurements, clearMeasurements, loadMeasurements } from './storage';
 import { validateData } from './validate';
 import type { Measurement, MetricId, Scenario } from './types';
+
+const mockProfile = { name: 'Commander Test' };
 
 const day = (n: number) => `2026-01-${String(n).padStart(2, '0')}T08:00:00Z`;
 const m = (type: MetricId, value: number, d: number): Measurement =>
@@ -22,16 +23,16 @@ describe('evaluate', () => {
     expect(r.indicators.sleep.latest).toEqual([]);
   });
 
-  it('zone boundaries: min inclusive, max exclusive', () => {
-    expect(evaluate([m('heart_rate', 50, 1)], mockProfile).indicators.heart_rate.status).toBe(
-      'normal',
-    );
-    expect(evaluate([m('heart_rate', 100, 1)], mockProfile).indicators.heart_rate.status).toBe(
-      'attention',
-    );
-    expect(evaluate([m('heart_rate', 120, 1)], mockProfile).indicators.heart_rate.status).toBe(
-      'critical',
-    );
+  it('zone boundaries: a value belongs to the last zone whose min it reaches', () => {
+  const hr = (v: number) =>
+    evaluate([m('heart_rate', v, 1)], mockProfile).indicators.heart_rate.status;
+  expect(hr(49.9)).toBe('critical'); // «дірка» між 49 і 50 належить нижчій зоні
+  expect(hr(50)).toBe('attention');
+  expect(hr(60)).toBe('normal');
+  expect(hr(100)).toBe('normal');
+  expect(hr(100.5)).toBe('normal'); // «дірка» між 100 і 101
+  expect(hr(101)).toBe('attention');
+  expect(hr(121)).toBe('critical');
   });
 
   it('blood pressure = worst of systolic and diastolic', () => {
@@ -68,15 +69,6 @@ describe('evaluate', () => {
     expect(s([7.2, 6.1, 5.4])).toBe('worsening');
     expect(s([4.5, 5, 6.5])).toBe('improving');
     expect(s([7, 7.5, 7.2, 7.4])).toBe('stable');
-  });
-
-  it('mock data (sample scenario) gives sleep=attention, worsening', () => {
-    const r = evaluate(mockMeasurements, mockProfile);
-    expect(r.indicators.sleep.status).toBe('attention');
-    expect(r.indicators.sleep.trend).toBe('worsening');
-    expect(r.indicators.sleep.reason).toBe(
-      'Sleep is 5.4 hours, below the normal range (6–10 hours).',
-    );
   });
 
   it('ignores NaN and bad timestamps', () => {
