@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useMission } from '../core/missionControler';
 import {
   ResponsiveContainer,
   LineChart,
@@ -53,7 +54,8 @@ function resolveMetric(key: string): MetricId | undefined {
 }
 
 export default function TrendChart({ indicatorKey }: TrendChartProps) {
-  const [range, setRange] = useState<RangeKey>('7');
+    const [range, setRange] = useState<RangeKey>('7');
+    const { measurements, playerState } = useMission();
 
   const metric = resolveMetric(indicatorKey);
   const threshold = metric
@@ -66,8 +68,8 @@ export default function TrendChart({ indicatorKey }: TrendChartProps) {
   // Усі дані беруться зі збережених вимірювань (localStorage), а не генеруються.
   const rows = useMemo(() => {
     if (!metric) return [];
-    const main = getSeries(metric);
-    const dia = isPressure ? getSeries('bp_diastolic') : [];
+    const main = getSeries(metric, measurements);
+      const dia = isPressure ? getSeries('bp_diastolic', measurements) : [];
     const diaByDay = new Map(dia.map((p) => [p.day, p.value]));
     const days = new Map(main.map((p) => [p.day, { day: p.day, label: p.label, value: p.value }]));
     for (const p of dia) {
@@ -80,7 +82,7 @@ export default function TrendChart({ indicatorKey }: TrendChartProps) {
         value: Number.isNaN(r.value) ? null : r.value,
         value2: diaByDay.get(r.day) ?? null,
       }));
-  }, [metric, isPressure]);
+  }, [metric, isPressure, measurements]);
 
   const chartData = useMemo(() => {
     if (range === 'all') return rows;
@@ -221,6 +223,7 @@ export default function TrendChart({ indicatorKey }: TrendChartProps) {
                 stroke="#0b3e91"
                 strokeWidth={3}
                 connectNulls
+                isAnimationActive={!playerState.running}
                 dot={{ r: 5, fill: '#0b3e91', strokeWidth: 2, stroke: '#ffffff' }}
                 activeDot={{ r: 7, fill: '#fc3d21' }}
               />
@@ -233,6 +236,7 @@ export default function TrendChart({ indicatorKey }: TrendChartProps) {
                   stroke="#64748b"
                   strokeWidth={2}
                   connectNulls
+                  isAnimationActive={!playerState.running}
                   dot={{ r: 4, fill: '#64748b', strokeWidth: 2, stroke: '#ffffff' }}
                 />
               )}

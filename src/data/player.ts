@@ -114,6 +114,18 @@ export function createScenarioPlayer(options: ScenarioPlayerOptions) {
       notify();
       scheduleNext();
     },
+    /** Відновлює позицію (наприклад, після перезавантаження сторінки) на паузі; таймер не стартує. */
+    restore(id: string, at: number, x = 1) {
+      const found = options.getScenario(id);
+      if (!found) return;
+      clearTimer();
+      scenario = found;
+      batches = scenarioToBatches(found);
+      index = Math.min(batches.length, Math.max(0, Math.floor(at)));
+      speed = Math.min(20, Math.max(0.25, x));
+      running = false;
+      notify();
+    },
     reset() {
       clearTimer();
       running = false;
