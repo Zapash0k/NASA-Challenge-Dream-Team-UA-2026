@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { saveDay, type DayValues } from '../core/history';
+import { type DayValues } from '../core/history';
+import { logManualDay } from '../core/missionControler';
 
 export const VITALS_STORAGE_KEY = 'healthySpace_vitals';
 //export const VITALS_HISTORY_KEY = 'healthySpace_history';     //тут доробити історію якщо буде час через додаток до функції handleSubmit()
@@ -93,7 +94,7 @@ export default function MeasurePage() {
       sleep_hours: toNum(sleepHours),
       mood_score: moodScore,
     };
-    setSavedDay(saveDay(dayValues));
+    setSavedDay(logManualDay(dayValues, payload));
 
     // Лишаємо «останній стан» для Dashboard / Body Map, які читають цей ключ.
     localStorage.setItem(VITALS_STORAGE_KEY, JSON.stringify(payload));
