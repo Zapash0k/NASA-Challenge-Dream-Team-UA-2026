@@ -55,16 +55,16 @@
     "callFlightSurgeon": "Contact the Flight Surgeon if temperature reaches 38.0°C or higher, falls below 35.0°C, or is accompanied by signs of illness or reduced performance.",
     "source": [
       {
-        "title": "NASA Human Research Roadmap - Cardiovascular Adaptations",
-        "url": "https://humanresearchroadmap.nasa.gov/Risks/risk.aspx?i=179"
+        "title": "NASA Immunology and Virology",
+        "url": "https://www.nasa.gov/directorates/esdmd/hhp/immunology-and-virology/https://humanresearchroadmap.nasa.gov/Risks/risk.aspx?i=179"
       },
       {
-        "title": "NASA Cardiovascular and Vision Laboratory",
-        "url": "https://www.nasa.gov/directorates/esdmd/hhp/cardiovascular-and-vision/"
+        "title": "NASA Scientists Probe How Long-Term Spaceflight Alters Immunity",
+        "url": "https://www.nasa.gov/missions/station/scientists-probe-how-long-term-spaceflight-alters-immunity/"
       },
       {
-        "title": "American Heart Association - Understanding Blood Pressure Readings",
-        "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"
+        "title": "MedlinePlus - Fever",
+        "url": "https://medlineplus.gov/fever.html"
       }
     ]
   },
